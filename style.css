@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #1e1e2f; /* Тёмно-фиолетовый фон */
+    color: #ffffff; /* Белый текст */
+}
+
+.calculator {
+    display: inline-block;
+    border: 2px solid #444;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background-color: #2d2d44; /* Тёмно-синий фон для калькулятора */
+}
+
+.input-box {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: #3b3b5e; /* Темно-синий дисплей */
+    color: #f7f7f7; /* Светлый текст */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 12px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f4f7b; /* Серо-фиолетовый для кнопок */
+    color: #ffffff; /* Белый текст */
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6969a2; /* Светло-фиолетовый при наведении */
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #5c5c85; /* Слегка затемнённый фиолетовый при нажатии */
+}
+
+.operator {
+    background-color: #4caf50; /* Зелёный для операторов */
+    color: white;
+}
+
+.operator:hover {
+    background-color: #43a047; /* Темно-зелёный при наведении */
+}
+
+.clear {
+    background-color: #e63946; /* Красный для кнопки очистки */
+    color: white;
+}
+
+.clear:hover {
+    background-color: #d62839; /* Насыщенно-красный при наведении */
+}
+
+.history {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #3b3b5e; /* Темно-синий для блока истории */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.history h2 {
+    font-size: 1.3rem;
+    color: #eaeaea; /* Светлый серый для заголовков */
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    font-size: 1rem;
+    padding: 5px 0;
+    border-bottom: 1px solid #555;
+    color: #eaeaea; /* Светло-серый текст */
+}
